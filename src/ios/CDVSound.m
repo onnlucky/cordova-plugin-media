@@ -313,7 +313,7 @@
                 }
             }
             if (!bError) {
-                NSLog(@"Playing audio sample '%@'", audioFile.resourcePath);
+                //NSLog(@"Playing audio sample '%@'", audioFile.resourcePath);
                 NSNumber* loopOption = [options objectForKey:@"numberOfLoops"];
                 NSInteger numberOfLoops = 0;
                 if (loopOption != nil) {
@@ -651,7 +651,7 @@
     NSString* jsString = nil;
 
     if (audioFile != nil) {
-        NSLog(@"Finished playing audio sample '%@'", audioFile.resourcePath);
+        //NSLog(@"Finished playing audio sample '%@'", audioFile.resourcePath);
     }
     if (flag) {
         audioFile.player.currentTime = 0;
